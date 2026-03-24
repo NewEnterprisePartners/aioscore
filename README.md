@@ -49,4 +49,4 @@ Production-ready starter SaaS app for measuring AI visibility via an **AIO Score
 - Add strict zod validation over all AI outputs.
 - Harden free-scan abuse prevention beyond basic IP/device checks.
 - Add robust logging, audit trails, and rate limiting.
-- Add webhook-driven Stripe subscription syncing.
+- Add webhook-driven Stripe subscription syncing.<<<<<<< codex/build-production-ready-website-for-aioscore.org-frmh
