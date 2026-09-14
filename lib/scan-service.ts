@@ -25,7 +25,7 @@ export async function generateScanResult(url: string): Promise<ScanResultPayload
           content: `Generate an AIO report JSON for ${url} with keys: summary, overallScore, categories(ai_readability,geo,technical_ai_accessibility,entity_authority,seo_foundations), competitorBenchmark, fullActionPlan.`
         }
       ],
-      response_format: { type: "json_object" }
+      text: { format: { type: "json_object" } }
     });
 
     const jsonText = response.output_text;

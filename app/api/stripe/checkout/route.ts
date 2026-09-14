@@ -10,7 +10,7 @@ export async function GET(request: Request) {
     return NextResponse.redirect(`${origin}/pricing?billing=placeholder`);
   }
 
-  const stripe = new Stripe(env.stripeSecretKey, { apiVersion: "2024-11-20.acacia" });
+  const stripe = new Stripe(env.stripeSecretKey, { apiVersion: "2025-02-24.acacia" });
   const price = plan === "pro" ? env.stripeProPriceId : env.stripeStarterPriceId;
 
   const session = await stripe.checkout.sessions.create({
